@@ -45,6 +45,8 @@ mov ah,00h
 int 16h
 cmp al,13
 je nl
+cmp al,8
+je backspace
 mov ah,0x0e
 int 10h
 jmp stop
@@ -53,6 +55,14 @@ call newline
 mov ah,0x0e
 mov al,'>'
 int 0x10
+jmp stop
+backspace:
+mov ah,0x0e
+int 10h
+mov al,' '
+int 10h
+mov al,8
+int 10h
 jmp stop
 
 ;print \n

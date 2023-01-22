@@ -29,7 +29,7 @@
 00000000000i[USBCTL] Pluggable USB devices
 00000000000i[USBCTL]   floppy mouse tablet keypad keyboard hub disk cdrom
 00000000000i[USBCTL]   printer
-00000000000i[MEM0  ] allocated memory at 0000020034AA9040. after alignment, vector=0000020034AAA000
+00000000000i[MEM0  ] allocated memory at 00000276747DE040. after alignment, vector=00000276747DF000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
 00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('D:\software\Bochs-2.7/BIOS-bochs-latest')
@@ -40,7 +40,7 @@
 00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
-00000000000i[CMOS  ] Setting initial clock to: Sun Jan 22 09:37:59 2023 (time0=1674351479)
+00000000000i[CMOS  ] Setting initial clock to: Sun Jan 22 11:20:45 2023 (time0=1674357645)
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -287,28 +287,33 @@
 00002269547i[BIOS  ] ata0-0: PCHS=121/16/63 translation=none LCHS=121/16/63
 00005703212i[BIOS  ] IDE time out
 00005973883i[BIOS  ] Booting from 0000:7c00
-00007595200i[WINGUI] dimension update x=720 y=400 fontheight=16 fontwidth=9 bpp=8
-00207318112i[WINGUI] &&&missing mouse state change
-06723208328i[      ] Ctrl-C detected in signal handler.
-06723214035i[      ] dbg: Quit
-06723214035i[CPU0  ] CPU is in real mode (active)
-06723214035i[CPU0  ] CS.mode = 16 bit
-06723214035i[CPU0  ] SS.mode = 16 bit
-06723214035i[CPU0  ] EFER   = 0x00000000
-06723214035i[CPU0  ] | EAX=00000022  EBX=00000000  ECX=00090002  EDX=00000100
-06723214035i[CPU0  ] | ESP=0000ffbc  EBP=00000000  ESI=000e0000  EDI=0000fdbc
-06723214035i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf ZF af PF cf
-06723214035i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-06723214035i[CPU0  ] |  CS:f000( 0004| 0|  0) 000f0000 0000ffff 0 0
-06723214035i[CPU0  ] |  DS:0040( 0005| 0|  0) 00000400 0000ffff 0 0
-06723214035i[CPU0  ] |  SS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-06723214035i[CPU0  ] |  ES:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-06723214035i[CPU0  ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-06723214035i[CPU0  ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-06723214035i[CPU0  ] | EIP=0000e871 (0000e871)
-06723214035i[CPU0  ] | CR0=0x60000010 CR2=0x00000000
-06723214035i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
-06723214035i[      ] Ctrl-C detected in signal handler.
-06723214035d[PCI   ] Exit
-06723214035i[CMOS  ] Last time is 1674351613 (Sun Jan 22 09:40:13 2023)
-06723214035i[SIM   ] quit_sim called with exit code 0
+00007571700i[WINGUI] dimension update x=720 y=400 fontheight=16 fontwidth=9 bpp=8
+00102085295i[WINGUI] &&&missing mouse state change
+05265040636i[BIOS  ] KBD: int09h_handler(): unknown scancode read: 0x5b!
+05470940631i[BIOS  ] KBD: int09h_handler(): unknown scancode read: 0x5b!
+06294690631i[BIOS  ] KBD: int09h_handler(): unknown scancode read: 0x5b!
+07570290633i[BIOS  ] KBD: int09h_handler(): unknown scancode read: 0x5b!
+15493277409i[      ] Ctrl-C detected in signal handler.
+15493282756i[      ] dbg: Quit
+15493282756i[CPU0  ] CPU is in real mode (active)
+15493282756i[CPU0  ] CS.mode = 16 bit
+15493282756i[CPU0  ] SS.mode = 16 bit
+15493282756i[CPU0  ] EFER   = 0x00000000
+15493282756i[CPU0  ] | EAX=00000030  EBX=00000000  ECX=00090002  EDX=00000100
+15493282756i[CPU0  ] | ESP=0000ffbc  EBP=00000000  ESI=000e0000  EDI=0000fdbc
+15493282756i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf ZF af PF cf
+15493282756i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+15493282756i[CPU0  ] |  CS:f000( 0004| 0|  0) 000f0000 0000ffff 0 0
+15493282756i[CPU0  ] |  DS:0040( 0005| 0|  0) 00000400 0000ffff 0 0
+15493282756i[CPU0  ] |  SS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+15493282756i[CPU0  ] |  ES:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+15493282756i[CPU0  ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+15493282756i[CPU0  ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+15493282756i[CPU0  ] | EIP=0000e86a (0000e86a)
+15493282756i[CPU0  ] | CR0=0x60000010 CR2=0x00000000
+15493282756i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
+15493282756i[      ] Ctrl-C detected in signal handler.
+15493282756d[PCI   ] Exit
+15493282756i[CMOS  ] Last time is 1674357954 (Sun Jan 22 11:25:54 2023)
+15493282756i[      ] Ctrl-C detected in signal handler.
+15493282756i[SIM   ] quit_sim called with exit code 0
